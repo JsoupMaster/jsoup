@@ -75,4 +75,13 @@ public class TagTest {
     @Test(expected = IllegalArgumentException.class) public void valueOfChecksNotEmpty() {
         Tag.valueOf(" ");
     }
+
+    // zgy: Add test case
+    @Test public void onlyOneUnknownTag() {
+        Tag foo = Tag.valueOf("FOO"); // not defined
+        Tag foo2 = Tag.valueOf("FOO");
+
+        assertEquals(foo, foo2);
+        assertEquals(true, foo==foo2);
+    }
 }

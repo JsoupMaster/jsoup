@@ -59,17 +59,26 @@ public class Tag {
      */
     public static Tag valueOf(String tagName, ParseSettings settings) {
         Validate.notNull(tagName);
+        // zgy: Start
         Tag tag = tags.get(tagName);
 
         if (tag == null) {
             tagName = settings.normalizeTag(tagName);
             Validate.notEmpty(tagName);
+            // zgy: Second 
             tag = tags.get(tagName);
 
             if (tag == null) {
-                // not defined: create default; go anywhere, do anything! (incl be inside a <p>)
-                tag = new Tag(tagName);
-                tag.isBlock = false;
+            // zgy: Handle multithreading
+                synchronized(Tag.class) {
+                    tag = tags.get(tagName);
+                    if (tag == null) {
+                        // not defined: create default; go anywhere, do anything! (incl be inside a <p>)
+                        tag = new Tag(tagName);
+                        tag.isBlock = false;
+                        register(tag);
+                    }
+                }
             }
         }
         return tag;
