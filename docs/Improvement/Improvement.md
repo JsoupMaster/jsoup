@@ -3,6 +3,10 @@
 ## 확장된 기능 요약
 유저가 파싱 뿐만 아니라 파싱을 하며, image나 url, html file을 Download받을 수 있는 기능을 만들었다.
 
+### 확장된 기능 위치
+
+![새로 추가한 기능 위치](https://user-images.githubusercontent.com/47529632/70325350-1faea180-1875-11ea-8807-0a1ae76d1c91.PNG)
+
 ## 확장된 기능 `Download`에 적용된 설계 패턴
 
 3가지 다운로드 기능과 관련된 패턴들은 다음과 같다.

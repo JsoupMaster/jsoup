@@ -29,4 +29,4 @@
 
 ### 팀원별 기여를 잘 나타낼 수 있는 각종 자료
 
-![image](https://user-images.githubusercontent.com/47529632/70294182-07fbfc80-1826-11ea-81ab-0f215b38c81b.png)
+![contribution](https://user-images.githubusercontent.com/47529632/70324696-86cb5680-1873-11ea-9ca1-72e2aa8668d3.PNG)
