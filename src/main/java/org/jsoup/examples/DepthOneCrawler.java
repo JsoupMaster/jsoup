@@ -8,8 +8,10 @@ import org.jsoup.downloader.UrlsDownloader;
 
 public class DepthOneCrawler {
     public static void main(String[] args) {
+        // You maybe want to change the web page or store path
         String url = "http://en.wikipedia.org/";
         String path = System.getProperty("user.dir") + "/download/";
+
         File file = new File(path);
         file.mkdir();
 
