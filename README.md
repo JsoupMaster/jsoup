@@ -21,7 +21,7 @@ discuss the analysis result together.
 
 ## Improvements and Extensions
 
-- Use **Strategy Patter** on `NodeTraversor`, so user can use different traverse
+- Use **Strategy Pattern** on `NodeTraversor`, so user can use different traverse
 method. -> 김희성
 - Add `Downloader` to let user simply download HTML files and image files.
 Employs **Simple Factory** and **Template Method** patterns -> 주광우
