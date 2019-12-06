@@ -9,3 +9,7 @@ target/
 *Thrash*
 .vscode/
 .DS_Store
+*.drawio
+*.png
+*.PNG
+*.jpg
